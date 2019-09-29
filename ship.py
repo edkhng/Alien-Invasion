@@ -2,6 +2,7 @@ import pygame
 
 class Ship():
 
+
     def __init__(self, ai_settings, screen):
         """Initialize the ship and set its starting position."""
         self.screen = screen
@@ -23,6 +24,12 @@ class Ship():
         self.moving_right = False
         self.moving_left = False
 
+
+    def center_ship(self):
+        """Center the ship on the screen."""
+        self.center = self.screen_rect.centerx
+
+
     def update(self):
         """Update the ship's poistion based on the movement flag."""
         # Update the ship's center value, not the rect.
@@ -35,6 +42,7 @@ class Ship():
 
         # Update rect object from self.center
         self.rect.centerx = self.center
+
 
     def blitme(self):
         """Draw the ship at its current location."""
