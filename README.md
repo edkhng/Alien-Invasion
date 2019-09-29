@@ -1,2 +1,2 @@
 # Alien-Invasion
-Simpy game following the project in the book Python Crash Course
+Simple game following the steps in the book Python Crash Course by Eric Matthes
